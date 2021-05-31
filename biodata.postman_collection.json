@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "d305c8f2-4d08-41ca-9d40-c3f6abe886c5",
+		"name": "biodata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users",
+			"protocolProfileBehavior": {
+				"followAuthorizationHeader": true,
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Naaz",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mobassera.naaz@kilowott.com",
+							"type": "text"
+						},
+						{
+							"key": "profile image",
+							"type": "file",
+							"src": "/C:/Users/mobassera naaz/Desktop/newDB/image/profile.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
